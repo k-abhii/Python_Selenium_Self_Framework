@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
+from pageObjects.CheckOutPage import CheckOutPage
 from pageObjects.HomePage import HomePage
 from utilities.BaseClass import BaseClass
 
@@ -11,7 +12,9 @@ class TestOne(BaseClass):
         homePage = HomePage(self.driver)
         homePage.shopItems().click()
         # self.driver.find_element(By.CSS_SELECTOR,"a[href*='shop']").click()
-        cards = self.driver.find_elements(By.XPATH,"//div[@class='card h-100']")
+        # cards = self.driver.find_elements(By.XPATH,"//div[@class='card h-100']")
+        checkoutPage = CheckOutPage(self.driver)
+        cards = checkoutPage.getCardTitle()
         for card in cards:
             productName = card.find_element(By.XPATH, "div/h4/a").text
             if productName == "Blackberry":
