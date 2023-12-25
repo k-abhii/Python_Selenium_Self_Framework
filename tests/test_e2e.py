@@ -52,7 +52,37 @@ class TestOne(BaseClass):
 # ========================================================================= 1 passed in 11.76s ==========================================================================
 
 
-
+# C:\Users\hp\PycharmProjects\PythonSelfFramework>py.test -v -s --browser_name firefox
+# ========================================================================= test session starts =========================================================================
+# platform win32 -- Python 3.8.2, pytest-7.4.3, pluggy-1.3.0 -- c:\python38\python.exe
+# cachedir: .pytest_cache
+# metadata: {'Python': '3.8.2', 'Platform': 'Windows-10-10.0.19041-SP0', 'Packages': {'pytest': '7.4.3', 'pluggy': '1.3.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.0.0', 'xdist': '3.5.0'}}
+# rootdir: C:\Users\hp\PycharmProjects\PythonSelfFramework
+# plugins: html-4.1.1, metadata-3.0.0, xdist-3.5.0
+# collected 1 item
+#
+# tests/test_e2e.py::TestOne::test_e2e ProtoCommerce
+# https://rahulshettyacademy.com/angularpractice/
+# ×
+# Success! Thank you! Your order will be delivered in next few weeks :-).
+# PASSED
+#
+# ========================================================================== warnings summary ===========================================================================
+# tests\conftest.py:20
+#   C:\Users\hp\PycharmProjects\PythonSelfFramework\tests\conftest.py:20: DeprecationWarning: invalid escape sequence \P
+#     service_obj = Service("C:\Program Files (x86)\msedgedriver.exe")
+#
+# tests\conftest.py:17
+#   C:\Users\hp\PycharmProjects\PythonSelfFramework\tests\conftest.py:17: DeprecationWarning: invalid escape sequence \P
+#     service_obj = Service("C:\Program Files (x86)\geckodriver.exe")
+#
+# tests\conftest.py:13
+#   C:\Users\hp\PycharmProjects\PythonSelfFramework\tests\conftest.py:13: DeprecationWarning: invalid escape sequence \P
+#     service_obj = Service("C:\Program Files (x86)\chromedriver.exe")
+#
+# -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+# =================================================================== 1 passed, 3 warnings in 25.62s ====================================================================
+#
 
 
 
